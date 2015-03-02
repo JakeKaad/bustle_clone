@@ -8,7 +8,3 @@ Mustle.Router.map(function() {
     this.resource('article3');
   })
 });
-
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})

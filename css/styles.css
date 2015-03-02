@@ -20,7 +20,17 @@
 }
 
 #social-div {
+  background: white;
   margin-top: -1.5%;
   width: 9%;
   float: right;
+}
+
+.social-button {
+  background: #72BCD4;
+  margin-bottom: 5px;
+}
+
+.social-button img {
+  margin-right: 3px;
 }

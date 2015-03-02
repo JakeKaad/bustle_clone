@@ -15,19 +15,21 @@
       <li><a href='#'>Exotic Sea Creatures</a></li>
       <li><a href='#'>Jr Dev Jobs</a></li>
       <li>
-        <div {{action "toggleSocialIcons" on="mouseEnter"}} >
+        <p {{action "toggleSocialIcons" on="mouseEnter"}} >
           <img src="img/webicon-github.png">
           <img src="img/webicon-instagram.png">
           <img src="img/webicon-facebook.png">
-        </div>
+        </p>
       </li>
     </ul>
   </div>
 </nav>
 
 {{#if showSocialIcons}}
-  <div {{action 'toggleSocialIconsOff' on='mouseLeave'}} id='social-div' class='well'>
-    Hi
+  <div {{action 'toggleSocialIconsOff' on='mouseLeave'}} id='social-div' class='well '>
+    <button class='btn btn-default social-button'><img src="img/webicon-facebook-s.png">Like</button>
+    <button class='btn btn-default social-button'><img src="img/webicon-instagram-s.png">Follow</button>
+    <button class='btn btn-default social-button'><img src="img/webicon-github-s.png">Follow</button>
   </div>
 {{/if}}
 
