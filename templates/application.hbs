@@ -14,9 +14,23 @@
       <li><a href='#'>Shoes</a></li>
       <li><a href='#'>Exotic Sea Creatures</a></li>
       <li><a href='#'>Jr Dev Jobs</a></li>
+      <li>
+        <div {{action "toggleSocialIcons" on="mouseEnter"}} >
+          <img src="img/webicon-github.png">
+          <img src="img/webicon-instagram.png">
+          <img src="img/webicon-facebook.png">
+        </div>
+      </li>
     </ul>
   </div>
 </nav>
+
+{{#if showSocialIcons}}
+  <div {{action 'toggleSocialIconsOff' on='mouseLeave'}} id='social-div' class='well'>
+    Hi
+  </div>
+{{/if}}
+
 
 <div class='container'>
   {{outlet}}
