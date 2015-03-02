@@ -5,13 +5,16 @@
   <link href='css/bootstrap.css' rel='stylesheet'/>
   <link rel="stylesheet" href='/css/styles.css' />
   <script src="libs/jquery-1.11.2.js"></script>
+  <script src="libs/bootstrap.js"></script>
   <script src="libs/ember-template-compiler-1.10.0.js"></script>
   <script src="libs/ember-1.10.0.debug.js"></script>
   <script src="libs/ember-handlebars-loader-0.0.2.js"></script>
 
   <script src="js/Application.js"></script>
   <script>
-    EmberHandlebarsLoader.loadTemplates(['application', 'home']);
+    EmberHandlebarsLoader.loadTemplates(
+      ['application', 'home', 'fashion', 'article1', 'article2', 'article3']
+      );
   </script>
 </head>
 <body>
